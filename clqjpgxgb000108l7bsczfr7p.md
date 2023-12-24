@@ -110,7 +110,7 @@ All you need is to:
 
 ## Pitfalls: things to be careful about
 
-Here I list some of the pifalls I have encountered in this integration. This is not an exhaustive list of what goes wrong with Amazon Cognito and the social login flow, but again my personal experience or in other words things I found during my working days.
+Here I list some of the pitfalls I have encountered in this integration. This is not an exhaustive list of what goes wrong with Amazon Cognito and the social login flow, but again my personal experience or in other words things I found during my working days.
 
 ### Watch out for Cognito limits
 
@@ -206,7 +206,7 @@ I see two problems here:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703424275924/79d20cd1-a18d-4ff3-829a-16905768712f.png align="center")
 
-After saving, you must analyse why the deletion failed and try again. How long can this take? It depends on the cause and your process, but until you've done that, users will still see their user associated with your device, and I'm not sure Apple would like it and approve your app submission.
+After saving, you must analyse why the deletion failed and try again. How long can this take? It depends on the cause and your process, but until you've done that, users will still see their user associated with your app, and I'm not sure Apple would like it and approve your app submission.
 
 You need to reverse the order of deletion, first on the Apple side and then on the Cognito side. If the Apple deletion fails, you can send an error message to the user and inform he/she that the deletion cannot be performed and they should try again later.
 
