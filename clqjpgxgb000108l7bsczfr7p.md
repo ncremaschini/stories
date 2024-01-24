@@ -233,7 +233,7 @@ I have shown you my solution to real-world problems and how you can make informe
 
 In other words, the daily work of an architect, simplified.
 
-Architectures need to evolve as the context and constraints change over time. So always design your solutions so that they can easily evolve with you.
+Architectures need to evolve as the context and constraints change over time. So always design your solutions so that they can easily evolve with them.
 
 I hope it was useful for you!
 
