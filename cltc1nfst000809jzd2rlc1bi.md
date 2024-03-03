@@ -1,6 +1,6 @@
 ---
 title: "Evaluating Performance: A Benchmark Study of Serverless Solutions for Message Delivery to Containers on AWS Cloud"
-seoTitle: "cloud-serverless-event-delivery"
+seoTitle: "aws-cloud-serverless-event-delivery"
 seoDescription: "A benchmark about serverless message delivery to  container on AWS cloud"
 datePublished: Sun Mar 03 2024 21:48:21 GMT+0000 (Coordinated Universal Time)
 cuid: cltc1nfst000809jzd2rlc1bi
