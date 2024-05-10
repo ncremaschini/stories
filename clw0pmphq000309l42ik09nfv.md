@@ -3,6 +3,7 @@ title: "Evaluating Performance: A Benchmark Study of Serverless Solutions for Me
 datePublished: Fri May 10 2024 13:25:30 GMT+0000 (Coordinated Universal Time)
 cuid: clw0pmphq000309l42ik09nfv
 slug: evaluating-performance-a-benchmark-study-of-serverless-solutions-for-message-delivery-to-containers-on-aws-cloud-episode-2
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/ObweQkF5w30/upload/93d10777cdfea4f77c17ec6c38c9b33b.jpeg
 tags: aws, dynamodb, serverless, ecs, aws-fargate, aws-eventbridge, fan-out
 
 ---
