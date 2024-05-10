@@ -250,14 +250,16 @@ This solution has proven to be fast and reliable and requires little configurati
 
 Since almost everything is managed, there is little space for tuning and improvements. In this particular configuration, I could simply give the Stream Processor Lambda more memory, but memory and latency do not scale (inversely) together.
 
-I could remove Lambda and replace it with Event Bridge Pipe. I haven't tried it yet, but i'm going to use the exact same benchmark and compare the results.
+<s>I could remove Lambda and replace it with Event Bridge Pipe. I haven't tried it yet, but i'm going to use the exact same benchmark and compare the results.</s>
 
-Last but not least, keep in mind that AWS does not always include latency in the service SLA. I've run this benchmark a few times with comparable results, but I can't be sure that I would always get the same results over time. If your system requires stable and predictable performance over time, you can't go with services that don't include performance metrics in their SLA. You're better off taking control of the layers below, which means [you should consider going to a restaurant or even making your own pizza at home.](https://engineering.dunelm.com/pizza-as-a-service-2-0-5085cd4c365e)
+**UPDATE:** [here the benchmark of the aforementioned solution with EventBridge](https://haveyoutriedrestarting.com/evaluating-performance-a-benchmark-study-of-serverless-solutions-for-message-delivery-to-containers-on-aws-cloud)
+
+Last but not least, keep in mind that AWS does not always include latency in the service SLA. I've run this benchmark a few times with comparable results, but I can't be sure that I will always get the same results over time. If your system requires stable and predictable performance over time, you can't go with services that don't include performance metrics in their SLA. You're better off taking control of the layers below, which means [you should consider going to a restaurant or even making your own pizza at home.](https://engineering.dunelm.com/pizza-as-a-service-2-0-5085cd4c365e)
 
 ## Wrap up
 
 In this article, I have presented you with a solution that I had to design as part of my work and my approach to solution development: this includes clarifying the scope and context, evaluating different options and having a good knowledge of the parts involved and the performance and quality attributes of the overall system, writing code and benchmarking where necessary, but always with the clear awareness that there are no perfect solutions.
 
-I hope it was helpful for you.
+I hope it was helpful to you, and [here is the GitHub repo to deploy both versions of the solution](https://github.com/ncremaschini/fargate-notifications).
 
 Bye 👋!
