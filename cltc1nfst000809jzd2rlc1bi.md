@@ -174,7 +174,7 @@ I used a basic postman collection runner to perform a mutation to Appsync every 
 
 The goal was to verify if containers would be updated within 2 seconds.
 
-### Measures
+### Measurements
 
 i used the following Cloudwatch provided metrics:
 
