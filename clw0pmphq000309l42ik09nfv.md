@@ -71,6 +71,10 @@ An even more serverless version of the above solution replaces Lambda and SNS wi
 
 *The only code i wrote here is the code to consume SQS from my application, no glue-code is required.*
 
+## Trust, but verify
+
+I've conducted a benchmark to verify the performance of this configuration, in terms of latency from the mutation being posted to Appsync to the message received by the client polling SQS.
+
 ### Key system parameters
 
 * Region: eu-south-1
