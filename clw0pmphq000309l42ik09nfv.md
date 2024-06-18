@@ -119,6 +119,12 @@ The SQS time taken custom metric is calculated from SQS provided attributes.
 
 ### Results
 
+*Disclaimer: some latency measurements are calculated on consumers' side, and we all know that synchronizing clocks in a distributed system is a hard problem.*
+
+*Still, measurements are performed by the same computing nodes.*
+
+*Please consider following latencies not as precise measurements but as coarse indicators.*
+
 Here screenshots from my Cloudwatch dashboard
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1715346550027/8998f0ec-c31a-494e-8e13-3ef113042c08.png align="center")
