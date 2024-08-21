@@ -258,7 +258,7 @@ Since almost everything is managed, there is little space for tuning and improve
 
 <s>I could remove Lambda and replace it with Event Bridge Pipe. I haven't tried it yet, but i'm going to use the exact same benchmark and compare the results.</s>
 
-**UPDATE:**[here the benchmark of the aforementioned solution with EventBridge](https://haveyoutriedrestarting.com/evaluating-performance-a-benchmark-study-of-serverless-solutions-for-message-delivery-to-containers-on-aws-cloud)
+**UPDATE:** [here the benchmark of the aforementioned solution with EventBridge](https://haveyoutriedrestarting.com/evaluating-performance-a-benchmark-study-of-serverless-solutions-for-message-delivery-to-containers-on-aws-cloud-episode-2)
 
 Last but not least, keep in mind that AWS does not always include latency in the service SLA. I've run this benchmark a few times with comparable results, but I can't be sure that I will always get the same results over time. If your system requires stable and predictable performance over time, you can't go with services that don't include performance metrics in their SLA. You're better off taking control of the layers below, which means [you should consider going to a restaurant or even making your own pizza at home.](https://engineering.dunelm.com/pizza-as-a-service-2-0-5085cd4c365e)
 
