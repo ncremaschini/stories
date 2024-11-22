@@ -65,7 +65,7 @@ Atomic counters require precise semantics to maintain correctness:
 
 For this series, I’ve chosen [DynamoDB](https://aws.amazon.com/dynamodb/)**,** [DocumentDB](https://aws.amazon.com/it/documentdb/)**,** [Elasticache Redis](https://aws.amazon.com/redis/)**,** [GoMomento](https://www.gomomento.com/), and [TiDB](https://pingcap.com/products/tidb/) for several key reasons:
 
-1. **Serverless and SaaS Models**: DynamoDB and the SaaS version of TiDB handle infrastructure and scaling for you. Similarly, ElastiCache and Momento offer managed caching solutions, focusing on simplicity and performance.
+1. **Serverless and SaaS Models**: DynamoDB, DocumentDb and the SaaS version of TiDB handle infrastructure and scaling for you. Similarly, ElastiCache and Momento offer managed caching solutions, focusing on simplicity and performance.
     
 2. **Diverse Strategies**: These systems represent a variety of approaches to critical aspects of distributed systems:
     
