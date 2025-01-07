@@ -143,7 +143,7 @@ async function hanldeSetIfAbsent(momentoClient: CacheClient,cacheName: string, i
 
 These methods perform the following logic:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736244822141/c7e38cd1-24f8-4ecb-9da4-20880b7c068a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736257451379/02b2860e-893d-459e-9f31-776163cec648.png align="center")
 
 and this ensures consistency, since race conditions are checked by the two check-and-set methods on server-side.
 
