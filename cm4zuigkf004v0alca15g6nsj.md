@@ -67,7 +67,7 @@ This example demonstrates how to implement an atomic counter using **AWS Lambda*
 
 3\. **ElastiCache Redis** Cluster: Stores the counters with atomicity guarantees.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734792672394/4124f58b-1234-47df-a950-af2e642adfcc.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736242960240/fdb98bce-e910-49d4-95d8-ee214a63342f.png align="center")
 
 In my example project you can decide wheter to use a maximum value for the counter or not: this determine if use or not conditional writes.
 
@@ -126,7 +126,7 @@ They check if the current value is below the maximum value, and then they both s
 
 Since *INC* command is executed unconditionally on server side, the counter is incremented by two and exceeds the maximum value.
 
-![Performing checks on client side can lead to race contisions](https://cdn.hashnode.com/res/hashnode/image/upload/v1734871735176/081f2c3a-d489-4fa4-8755-4432389b5e54.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736243855622/65addd38-7704-4592-89b5-a40275a9183c.png align="center")
 
 ## Redis secret sauce: LUA Script
 
@@ -162,7 +162,7 @@ The magic of LUA Script is that just one script can be executed at the same time
 
 and that is exactly what we need when dealing with atomic counters: Since only one script is executed, there is no concurrency and no race conditions, as **serializability is** guaranteed.
 
-![LUA Script avoids race conditions](https://cdn.hashnode.com/res/hashnode/image/upload/v1734871750087/d2ffa87f-767f-4020-802c-a121d71b7fc0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736244214122/afba5863-5292-4d2f-8fc3-6627324a060d.png align="center")
 
 Moreover, we have better performance, which is good:
 
