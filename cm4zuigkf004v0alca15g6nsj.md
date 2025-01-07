@@ -10,11 +10,6 @@ tags: cloud, aws, redis, databases, distributed-system, serverless
 
 ---
 
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">💡</div>
-<div data-node-type="callout-text">Please read this article in DARK mode or you won’t see diagrams lines</div>
-</div>
-
 When working with high-throughput, low-latency applications, **Redis**—an in-memory data store—stands out as an excellent choice for implementing the **atomic counter pattern**.
 
 With its atomic operations and simple APIs, Redis offers a straightforward approach to incrementing counters while ensuring high performance.
