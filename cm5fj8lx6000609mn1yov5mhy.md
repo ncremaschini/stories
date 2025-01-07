@@ -10,11 +10,6 @@ tags: aws, databases, caching, distributed-system, consistency
 
 ---
 
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">💡</div>
-<div data-node-type="callout-text">Please read this article in DARK mode or you won’t see diagrams lines</div>
-</div>
-
 In the world of distributed systems, **serverless caching** is gaining traction for its simplicity and scalability. [**Momento**](https://www.gomomento.com/), a fully managed serverless cache, builds on the core concepts of caching while eliminating infrastructure management.
 
 In this third installment of the [atomic counter series](https://haveyoutriedrestarting.com/series/atomic-counter), we’ll explore how to implement the pattern using [**Momento**](https://www.gomomento.com/). By comparing it to [**Redis**](https://redis.io/), we’ll highlight how Momento simplifies caching for developers, discuss its trade-offs, and guide you through a practical implementation using the code in [this GitHub repository](https://github.com/ncremaschini/atomic-counter).
@@ -59,7 +54,7 @@ This example demonstrates how to implement an atomic counter using **AWS Lambda*
 
 3\. **Momento**: Stores the counters.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1735833793508/24e4bf6c-22b4-4cb2-8250-c3384ee32d8f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736244695494/c95ab48e-12fd-4bf0-84e1-87b2e284fbae.png align="center")
 
 In my example project you can decide wheter to use a maximum value for the counter or not: this determine if use or not conditional writes.
 
@@ -148,17 +143,17 @@ async function hanldeSetIfAbsent(momentoClient: CacheClient,cacheName: string, i
 
 These methods perform the following logic:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1735831831354/635395a5-d9a8-4736-bb3b-be26358d3a1c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736244822141/c7e38cd1-24f8-4ecb-9da4-20880b7c068a.png align="center")
 
 and this ensures consistency, since race conditions are checked by the two check-and-set methods on server-side.
 
 This is how key initialization works (*set if not present* branch):
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1735832533746/7d57d6ae-425d-47a1-90bd-e406a0a65a07.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736245870347/f55ef434-e011-4de1-85fd-e9022fa5bb3e.png align="center")
 
 and this is how an existing key increment works (*set if present and not equals* branch):
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1735832740615/7562edca-062d-43c1-bf40-8f9827e460b8.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1736245944886/ddf6c0c1-fd30-4134-aa68-36600c849d0a.png align="center")
 
 # Trade-Offs and conclusion
 
