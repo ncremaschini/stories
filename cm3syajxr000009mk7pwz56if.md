@@ -5,6 +5,7 @@ seoDescription: "Atomic counters ensure consistency and scalability in distribut
 datePublished: Fri Nov 22 2024 16:23:29 GMT+0000 (Coordinated Universal Time)
 cuid: cm3syajxr000009mk7pwz56if
 slug: atomic-counter-framing-the-problem-space
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/jrKKj9nJMxM/upload/7ec4b67587ff34d3e5a636d165164e97.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1732292516694/98683498-585d-41f3-ac3a-89cd522bcb17.webp
 tags: cloud, aws, databases, distributed-system, serverless, distributed-database
 
